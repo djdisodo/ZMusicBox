@@ -233,7 +233,7 @@ class MusicPlayer extends PluginTask{
         $this->plugin = $plugin;
     }
 	
-	public function onRun($CT){
+	public function onRun(int $CT){
 		if(isset($this->plugin->song->sounds[$this->plugin->song->tick])){
 			$i = 0;
 			foreach($this->plugin->song->sounds[$this->plugin->song->tick] as $data){
